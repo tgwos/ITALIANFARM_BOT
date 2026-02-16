@@ -16,8 +16,8 @@ from telegram.ext import (
 TOKEN = os.getenv("BOT_TOKEN")
 
 # 🌐 URL
-LOGO_URL = "https://tgwos.github.io/mini-app1/gas-cloud-logo.png"
-CATALOG_URL = "https://tgwos.github.io/mini-app1/"
+LOGO_URL = "https://tgwos.github.io/ITALIANFARM/5807439531530194108.jpg"
+CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
 TELEGRAM_GROUP_URL = "https://t.me/+iMgIPdF4HPswMDRh"
 SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDujiZdq6QYIPqOVMwE8I2utpG27IFlHr3NcGuX9rg7nEhB5oZDrOOzWhaoX4bTSIZ4W"
@@ -81,7 +81,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_photo(
         photo=LOGO_URL,
         caption=(
-            "\nBENVENUTI SU GAS CLOUD BOT.\n"
+            "\nBENVENUTI SU ITALIAN FARM BOT.\n"
         ),
         reply_markup=main_keyboard()
     )
@@ -109,7 +109,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "back":
         await query.edit_message_caption(
             caption=(
-                "BENVENUTI SU GAS CLOUD BOT.\n\n"
+                "BENVENUTI SU ITALIAN FARM BOT.\n\n"
             ),
             reply_markup=main_keyboard()
         )
