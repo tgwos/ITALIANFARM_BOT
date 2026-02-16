@@ -19,8 +19,8 @@ TOKEN = os.getenv("BOT_TOKEN")
 LOGO_URL = "https://tgwos.github.io/ITALIANFARM/5807439531530194108.jpg"
 CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
-TELEGRAM_GROUP_URL = "https://t.me/+iMgIPdF4HPswMDRh"
-SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDujiZdq6QYIPqOVMwE8I2utpG27IFlHr3NcGuX9rg7nEhB5oZDrOOzWhaoX4bTSIZ4W"
+TELEGRAM_GROUP_URL = "https://t.me/+TIzcbA_vAMw4ZjU0"
+SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDNGRGl9UmFJzST3ADxn0PsPIc0zsRWW1foOy3Ity-KvEhBjRjUNbHUuV1qczApKp_ok"
 REVIEWS_CHANNEL_URL = "https://t.me/+l_7fa3bXhGpjMTRh"
 RISERVA_CHANNEL_URL = "https://t.me/+Aaw_vDmJbUc5NWFh"
 
