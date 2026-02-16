@@ -86,5 +86,5 @@ def main():
     app.run_polling()
 
 # ✅ ENTRY POINT CORRETTO
-if name == "__main__":
+if __name__ == "__main__":
     main()
