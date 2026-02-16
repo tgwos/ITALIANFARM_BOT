@@ -21,8 +21,8 @@ CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
 TELEGRAM_GROUP_URL = "https://t.me/+TIzcbA_vAMw4ZjU0"
 SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDNGRGl9UmFJzST3ADxn0PsPIc0zsRWW1foOy3Ity-KvEhBjRjUNbHUuV1qczApKp_ok"
-REVIEWS_CHANNEL_URL = "https://t.me/+l_7fa3bXhGpjMTRh"
-RISERVA_CHANNEL_URL = "https://t.me/+Aaw_vDmJbUc5NWFh"
+#REVIEWS_CHANNEL_URL = "https://t.me/+l_7fa3bXhGpjMTRh"
+#RISERVA_CHANNEL_URL = "https://t.me/+Aaw_vDmJbUc5NWFh"
 
 # 🔹 Tastiera principale
 def main_keyboard():
@@ -54,13 +54,13 @@ def main_keyboard():
         [
             InlineKeyboardButton(
                 "⭐ Canale Recensioni",
-                url=REVIEWS_CHANNEL_URL
+               # url=REVIEWS_CHANNEL_URL
             )
         ],
         [
             InlineKeyboardButton(
                 "🔹 Canale Riserva",
-                url=RISERVA_CHANNEL_URL
+               # url=RISERVA_CHANNEL_URL
             )
         ]
     ])
@@ -96,11 +96,9 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
             caption=(
                 "📱 *CONTATTI UFFICIALI*\n\n"
                 "✈️ *TELEGRAM*\n"
-                "@GASCLOUD2\n\n"
+                " @Italianfarm1\n\n"
                 "📶 *SIGNAL*\n"
-                "https://signal.me/#eu/CgfgU9UgZDG\\_PkIW19RZU90SY6WyRcInKywqHGpPorTDNai1pUFDc67sIUINOKeJ\n\n"
-                "🥔 *POTATO*\n"
-                "https://tutuduanyu.org/GASCLOUD2"
+                "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5"
             ),
             reply_markup=back_keyboard(),
             parse_mode="Markdown"
