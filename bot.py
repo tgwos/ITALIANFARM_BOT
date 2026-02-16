@@ -32,8 +32,7 @@ def main_keyboard():
         [InlineKeyboardButton("📞 Contatti ufficiali", callback_data="contacts")],
         [InlineKeyboardButton("👥 Canale Telegram", url=TELEGRAM_GROUP_URL)],
         [InlineKeyboardButton("🔐 Gruppo Signal", url=SIGNAL_GROUP_URL)],
-        [InlineKeyboardButton("⭐ Canale Recensioni", url=REVIEWS_CHANNEL_URL)],
-        [InlineKeyboardButton("🔹 Canale Riserva", url=RISERVA_CHANNEL_URL)],
+      
     ])
 
 # 🔹 Tastiera indietro
@@ -60,11 +59,11 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
             caption=(
                 "📱 CONTATTI UFFICIALI\n\n"
                 "✈️ TELEGRAM\n"
-                "@GASCLOUD2\n\n"
+                "@Italianfarm1\n\n"
                 "📶 SIGNAL\n"
-                "https://signal.me/#eu/CgfgU9UgZDG_PkIW19RZU90SY6WyRcInKywqHGpPorTDNai1pUFDc67sIUINOKeJ\n\n"
+                "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5\n\n"
                 "🥔 POTATO\n"
-                "https://tutuduanyu.org/GASCLOUD2"
+                "https://tutuduanyu.org/italianfarm"
             ),
             reply_markup=back_keyboard()
         )
