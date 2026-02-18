@@ -45,7 +45,7 @@ def back_keyboard():
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_photo(
         photo=LOGO_URL,
-        caption="🌱 BENVENUTI SU ITALIAN FARM BOT 🌱",
+        caption="👑 BENVENUTI SU ITALIAN FARM BOT 👑",
         reply_markup=main_keyboard()
     )
 
