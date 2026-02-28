@@ -79,7 +79,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 "• 🪙 Criptovalute\n"
                 "• 💳 Ricarica Postepay presso tabaccheria\n\n"
                 "🤝 *Escrow accettato*\n\n"
-                "Per ulteriori informazioni contatta l’assistenza."
+               
             ),
             parse_mode="Markdown",
             reply_markup=back_keyboard()
