@@ -20,7 +20,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 LOGO_URL = "https://tgwos.github.io/ITALIANFARM/5807439531530194108.jpg"
 CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
-TELEGRAM_GROUP_URL = "https://t.me/+TIzcbA_vAMw4ZjU0"
+TELEGRAM_GROUP_URL = "https://t.me/+BEE0Iz8uo0YzYTRkU0"
 SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDNGRGl9UmFJzST3ADxn0PsPIc0zsRWW1foOy3Ity-KvEhBjRjUNbHUuV1qczApKp_ok"
 
 # 🔹 Tastiera principale
