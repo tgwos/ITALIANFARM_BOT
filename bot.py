@@ -20,7 +20,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 LOGO_URL = "https://tgwos.github.io/ITALIANFARM/5807439531530194108.jpg"
 CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
-TELEGRAM_GROUP_URL = "https://t.me/+TIzcbA_vAMw4ZjU0"
+TELEGRAM_GROUP_URL = "https://t.me/+TJZTE4SGZBRhNTE0"
 SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDNGRGl9UmFJzST3ADxn0PsPIc0zsRWW1foOy3Ity-KvEhBjRjUNbHUuV1qczApKp_ok"
 
 # 🔹 Tastiera principale
@@ -58,7 +58,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
             caption=(
                 "📱 *CONTATTI UFFICIALI*\n\n"
                 "✈️ *Telegram*\n"
-                "@Italianfarm1\n\n"
+                "@italianfarm10\n\n"
                 "📶 *Signal*\n"
                 "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5\n\n"
                 "🥔 *Potato*\n"
