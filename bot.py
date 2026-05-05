@@ -20,35 +20,52 @@ TOKEN = os.getenv("BOT_TOKEN")
 LOGO_URL = "https://tgwos.github.io/ITALIANFARM/5807439531530194108.jpg"
 CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
+TELEGRAM_CONTACT_URL = "https://t.me/italianfarm11"
 TELEGRAM_GROUP_URL = "https://t.me/+TJZTE4SGZBRhNTE0"
-SIGNAL_GROUP_URL = "https://signal.group/#CjQKIDNGRGl9UmFJzST3ADxn0PsPIc0zsRWW1foOy3Ity-KvEhBjRjUNbHUuV1qczApKp_ok"
+SIGNAL_URL = "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5"
+INSTAGRAM_URL = "https://www.instagram.com/la_fattoria____/"
 
-# 🔹 Tastiera principale
+# 🏠 Menu principale premium
 def main_keyboard():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("📦 Apri Catalogo", web_app=WebAppInfo(url=CATALOG_URL))],
-        [InlineKeyboardButton("📞 Contatti ufficiali", callback_data="contacts")],
-        [InlineKeyboardButton("💳 Metodo di pagamento", callback_data="payment")],
+        [InlineKeyboardButton("🛒 Apri Catalogo", web_app=WebAppInfo(url=CATALOG_URL))],
+        [InlineKeyboardButton("📞 Contatti Ufficiali", callback_data="contacts")],
         [InlineKeyboardButton("👥 Canale Telegram", url=TELEGRAM_GROUP_URL)],
-        [InlineKeyboardButton("🔐 Gruppo Signal", url=SIGNAL_GROUP_URL)],
     ])
 
-# 🔹 Tastiera indietro
-def back_keyboard():
+# 📞 Menu contatti premium
+def contacts_keyboard():
     return InlineKeyboardMarkup([
+        [InlineKeyboardButton("✈️ Telegram", url=TELEGRAM_CONTACT_URL)],
+        [InlineKeyboardButton("📶 Signal", url=SIGNAL_URL)],
+        [InlineKeyboardButton("📷 Instagram", url=INSTAGRAM_URL)],
         [InlineKeyboardButton("⬅️ Indietro", callback_data="back")]
     ])
 
-# 🔹 /start
+# 🚀 /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_photo(
         photo=LOGO_URL,
-        caption="👑 *BENVENUTO SU ITALIAN FARM BOT* 👑\n\nSeleziona un'opzione dal menu qui sotto:",
-        parse_mode="Markdown",
+        caption=(
+            "🏪 ITALIAN FARM — OFFICIAL BOT\n"
+            "━━━━━━━━━━━━━━\n\n"
+            "Benvenuto nel menu ufficiale.\n"
+            "Scegli una sezione qui sotto:\n\n"
+            "🛒 Catalogo\n"
+            "Consulta prodotti, info e disponibilità.\n\n"
+            "📞 Contatti ufficiali\n"
+            "Telegram, Signal e Instagram.\n\n"
+            "👥 Community Telegram\n"
+            "Accedi al canale ufficiale.\n\n"
+            "━━━━━━━━━━━━━━\n"
+            "✅ Supporto rapido\n"
+            "🔒 Solo canali ufficiali\n"
+            "📦 Catalogo sempre aggiornato"
+        ),
         reply_markup=main_keyboard()
     )
 
-# 🔹 Gestione pulsanti
+# 🔘 Gestione pulsanti
 async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
@@ -56,55 +73,54 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if query.data == "contacts":
         await query.edit_message_caption(
             caption=(
-                "📱 *CONTATTI UFFICIALI*\n\n"
-                "✈️ *Telegram*\n"
-                "@italianfarm11\n\n"
-                "📶 *Signal*\n"
-                "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5\n\n"
-                "📷 *instagram*\n"
-                "https://www.instagram.com/la_fattoria____?igsh=MTlpcnRxeDkwMzAwbA=="
+                "📞 CONTATTI UFFICIALI\n"
+                "━━━━━━━━━━━━━━\n\n"
+                "Scegli dove contattarci:\n\n"
+                "✈️ Telegram\n"
+                "Supporto diretto.\n\n"
+                "📶 Signal\n"
+                "Canale privato di contatto.\n\n"
+                "📷 Instagram\n"
+                "Profilo ufficiale.\n\n"
+                "━━━━━━━━━━━━━━"
             ),
-            parse_mode="Markdown",
-            reply_markup=back_keyboard()
-        )
-
-    elif query.data == "payment":
-        await query.edit_message_caption(
-            caption=(
-                "💳 *METODI DI PAGAMENTO*\n\n"
-                "🚚 *Delivery / Meetup*\n"
-                "Pagamento in contanti alla consegna.\n\n"
-                "📦 *Spedizione (Ship)*\n"
-                "Pagamento anticipato tramite:\n"
-                "• 🪙 Criptovalute\n"
-                "• 💳 Ricarica Postepay presso tabaccheria\n\n"
-                "🤝 *Escrow accettato*\n\n"
-               
-            ),
-            parse_mode="Markdown",
-            reply_markup=back_keyboard()
+            reply_markup=contacts_keyboard()
         )
 
     elif query.data == "back":
         await query.edit_message_caption(
-            caption="🌱 *BENVENUTO SU ITALIAN FARM BOT* 🌱\n\nSeleziona un'opzione dal menu:",
-            parse_mode="Markdown",
+            caption=(
+                "🏪 ITALIAN FARM — OFFICIAL BOT\n"
+                "━━━━━━━━━━━━━━\n\n"
+                "Benvenuto nel menu ufficiale.\n"
+                "Scegli una sezione qui sotto:\n\n"
+                "🛒 Catalogo\n"
+                "Consulta prodotti, info e disponibilità.\n\n"
+                "📞 Contatti ufficiali\n"
+                "Telegram, Signal e Instagram.\n\n"
+                "👥 Community Telegram\n"
+                "Accedi al canale ufficiale.\n\n"
+                "━━━━━━━━━━━━━━\n"
+                "✅ Supporto rapido\n"
+                "🔒 Solo canali ufficiali\n"
+                "📦 Catalogo sempre aggiornato"
+            ),
             reply_markup=main_keyboard()
         )
 
-# 🔹 Avvio bot
+# ▶️ Avvio bot
 def main():
     if not TOKEN:
         raise RuntimeError("❌ BOT_TOKEN non impostato")
 
     app = ApplicationBuilder().token(TOKEN).build()
+
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(buttons))
 
-    print("✅ Bot avviato correttamente")
+    print("✅ Bot premium avviato correttamente")
     app.run_polling()
 
-# ✅ ENTRY POINT CORRETTO
 if __name__ == "__main__":
     main()
 
