@@ -41,29 +41,14 @@ def contacts_keyboard():
         [InlineKeyboardButton("📷 Instagram", url=INSTAGRAM_URL)],
         [InlineKeyboardButton("⬅️ Indietro", callback_data="back")]
     ])
-
-# 🚀 /start
+# 🔹 /start 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_photo(
         photo=LOGO_URL,
-        caption=(
-            "🏪 ITALIAN FARM — OFFICIAL BOT\n"
-            "━━━━━━━━━━━━━━\n\n"
-            "Benvenuto nel menu ufficiale.\n"
-            "Scegli una sezione qui sotto:\n\n"
-            "🛒 Catalogo\n"
-            "Consulta prodotti, info e disponibilità.\n\n"
-            "📞 Contatti ufficiali\n"
-            "Telegram, Signal e Instagram.\n\n"
-            "👥 Community Telegram\n"
-            "Accedi al canale ufficiale.\n\n"
-            "━━━━━━━━━━━━━━\n"
-            "✅ Supporto rapido\n"
-            "🔒 Solo canali ufficiali\n"
-            "📦 Catalogo sempre aggiornato"
-        ),
+        caption="👑 BENVENUTO SU ITALIAN FARM BOT 👑\n\nSeleziona un'opzione dal menu qui sotto:",
         reply_markup=main_keyboard()
     )
+
 
 # 🔘 Gestione pulsanti
 async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
