@@ -61,8 +61,8 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 "@italianfarm11\n\n"
                 "📶 *Signal*\n"
                 "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5\n\n"
-                "🥔 *Potato*\n"
-                "https://tutuduanyu.org/italianfarm"
+                "📷 *instagram*\n"
+                "https://www.instagram.com/la_fattoria____?igsh=MTlpcnRxeDkwMzAwbA=="
             ),
             parse_mode="Markdown",
             reply_markup=back_keyboard()
@@ -107,3 +107,4 @@ def main():
 # ✅ ENTRY POINT CORRETTO
 if __name__ == "__main__":
     main()
+
