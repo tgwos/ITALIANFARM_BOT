@@ -20,7 +20,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 LOGO_URL = "https://tgwos.github.io/ITALIANFARM/5807439531530194108.jpg"
 CATALOG_URL = "https://tgwos.github.io/ITALIANFARM/"
 
-TELEGRAM_CONTACT_URL = "https://t.me/italianfarm11"
+TELEGRAM_CONTACT_URL = "https://t.me/italianfarm01"
 TELEGRAM_GROUP_URL = "https://t.me/+TJZTE4SGZBRhNTE0"
 SIGNAL_URL = "https://signal.me/#eu/kRf_X-QX9q6AnKI0IC9lsi2GjAiS7cLKf_MoHkGnHt1U3msPbTJOYJ7C2IOfVkU5"
 INSTAGRAM_URL = "https://www.instagram.com/la_fattoria____/"
